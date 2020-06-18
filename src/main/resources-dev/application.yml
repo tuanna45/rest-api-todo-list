@@ -1,7 +1,10 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/todo
-    username: natuan
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: admin
     password: 123456a!A
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
 server:
   port: 8282
